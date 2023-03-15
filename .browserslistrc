@@ -1,0 +1,17 @@
+defaults
+not IE 11
+maintained node versions
+
+# Not Mobile
+not and_chr >= 0
+not and_ff  >= 0
+not and_qq  >= 0
+not and_uc  >= 0
+not android >= 0
+not ios_saf >= 0
+not op_mini all
+not op_mob  >= 0
+not kaios >= 0
+not samsung >= 0
+
+

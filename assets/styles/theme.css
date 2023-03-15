@@ -1,0 +1,62 @@
+.root {
+  /* 颜色变量 */
+  --white: #fff;
+  --white-lighter: rgb(255 255 255 / 30%);
+  --white-lighter-2: rgb(249 249 249 / 8%);
+  --black: #151515;
+
+  /* --black-lighter: #1e1e1e; */
+  --black-lighter: #313131;
+  --black-lighter-2: rgb(40 40 40 / 60%);
+  --black-lighter-3: rgb(196 196 196 / 5%);
+  --green: #00df9a;
+  --blue: #4aa8ff;
+  --blue-lighter: rgb(74 168 255 / 50%);
+  --pink: linear-gradient(135deg, #f758a4 0%, #ff6161 100%);
+
+  /* 新版全局变量 */
+  --white-lighter-3: rgb(255 255 255 / 16%);
+  --white-lighter-4: rgb(255 255 255 / 60%);
+  --white-lighter-5: rgb(255 255 255 / 40%);
+  --black-lighter-4: #212121;
+  --red: #ff6161;
+
+  --yellow: rgb(255, 197, 80);
+  /* --red: #f77272;
+
+
+
+  --gray: #9f9f9f; */
+
+  /* 页面变量 */
+  --color: var(--white);
+
+  /* --color-sub: var(--gray); */
+  --link: var(--white);
+  --bg: var(--black);
+  --bg-lighter: var(--black-lighter);
+  --bg-lighter-2: var(--white-lighter-2);
+  --bg-lighter-3: var(--black-lighter-2);
+  --bg-lighter-4: var(--black-lighter-3);
+  --bg-lighter-5: var(--black-lighter-4);
+  --border-color: transparent;
+  --border-error: var(--red);
+  --focus-border-color: var(--green);
+  --gradient: linear-gradient(135deg, #00df9a 0%, #4aa8ff 100%);
+
+  /* 新版全局变量 */
+  --dialog-bg: var(--black-lighter-4);
+  --card-bg: var(--black-lighter-4);
+  --dialog-bg-lighter: var(--black-lighter);
+  --border-color-lighter: var(--white-lighter-3);
+  --color-sub: var(--white-lighter-4);
+  --color-sub-2: var(--white-lighter-5);
+  --color-sub-3: var(--black-lighter-4);
+  --color-primary: var(--green) !important;
+  --button-bg-primary: var(--green);
+  --disabled-bg: #414141;
+  --border-bottom-color: rgb(255 255 255 / 16%);
+}
+
+.dark-mode {
+}

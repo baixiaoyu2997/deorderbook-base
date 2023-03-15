@@ -1,0 +1,70 @@
+/* 所有变量：https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss */
+
+html.root {
+  --el-text-color-regular: var(--color);
+  --el-text-color-primary: var(--color);
+
+  /* loading */
+  & .el-loading-spinner .path {
+    /* spinner颜色 */
+    stroke: var(--yellow);
+  }
+  & .el-overlay {
+    background-color: rgba(21, 21, 21, 0.75); /* dialog遮罩层颜色 */
+  }
+  & .el-loading-mask {
+    background-color: rgba(21, 21, 21, 0.75);
+  }
+
+  & .el-popper.y-tooltip {
+    padding: 8px 12px;
+    color: rgb(255, 255, 255, 0.8);
+    background: #45454d;
+    border: none;
+    border-radius: 8px;
+    & .el-popper__arrow::before {
+      background-color: #45454d;
+      border-color: transparent;
+    }
+  }
+  /* 设置全局通知样式，覆盖el-notification */
+  & .y-notify.el-notification {
+    padding: 16px 24px 16px 3px;
+    border-radius: 16px;
+    /* 隐藏icon */
+    & .el-notification__icon {
+      display: none;
+    }
+    /* notify title样式 */
+    & .el-notification__title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+    /* notify 内容样式 */
+    & .el-notification__content {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #ffffff;
+      opacity: 0.6;
+    }
+    &.is-success {
+      background: #26262b;
+      border: 1px solid #4d4d4d;
+    }
+    &.is-error {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        rgba(222, 66, 56, 0.1);
+      border: 1px solid rgba(222, 66, 56, 0.5);
+      & .el-notification__title {
+        color: #de4238;
+      }
+      & .el-notification__content {
+        color: #de4238;
+        opacity: 0.6;
+      }
+    }
+  }
+}

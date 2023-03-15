@@ -1,0 +1,68 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-recommended",
+    "prettier"
+  ],
+  "globals": {},
+  // add your custom rules here
+  "rules": {
+    "import/no-mutable-exports": "off",
+    "vue/no-v-for-template-key": "off", // 禁用针对vue2的规则
+    "vue/multi-word-component-names": "off",
+    "vue/no-v-model-argument": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "n/no-callback-literal": "off", // node风格callback校验
+    "complexity": [
+      // 代码圈层复杂度
+      "error",
+      {
+        "max": 15
+      }
+    ],
+    "max-depth": "error",
+    "max-nested-callbacks": "error",
+    "max-lines": [
+      "error",
+      {
+        "max": 600,
+        "skipComments": true,
+        "skipBlankLines": true
+      }
+    ],
+    "max-lines-per-function": [
+      "error",
+      {
+        "skipComments": true,
+        "skipBlankLines": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./**/*.{js,ts}"],
+      "rules": {
+        "max-lines-per-function": [
+          "error",
+          {
+            "max": 200,
+            "skipComments": true,
+            "skipBlankLines": true
+          }
+        ]
+      }
+    }
+  ]
+}

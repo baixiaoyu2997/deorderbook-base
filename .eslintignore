@@ -1,0 +1,6 @@
+/public/*
+.nuxt
+.output
+/dist/*
+node_modules
+types

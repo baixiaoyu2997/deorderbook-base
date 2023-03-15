@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["types/options.ts"],
+  "out": "documents",
+  "exclude": ["node_modules"],
+  "includeVersion": true,
+  "name": "DeOrderbook Explorer Doc",
+  "hideGenerator": true,
+  "skipErrorChecking": true,
+  "disableSources": true
+}
