@@ -68,7 +68,6 @@
     "@vueuse/core": "^9.13.0",
     "big.js": "^6.2.1",
     "dayjs": "^1.11.7",
-    "deorderbook-sdk": "git+https://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:x-oauth-basic@github.com/DeOrderBook/deorderbook-sdk.git",
     "element-plus": "^2.3.0",
     "ethers": "^5.7.2",
     "pinia": "^2.0.33",
